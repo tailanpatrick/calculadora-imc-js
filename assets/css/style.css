@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(13, 106, 134);
+    --primary-color-darker: rgb(12, 87, 110);
+    --green-color: #01FCC1;
+    --red-color:#FE7288;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif ;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+form input:focus {
+    outline: 2px solid var(--primary-color);
+    border: none;
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+form button:active {
+    background-color: var(--primary-color-darker);
+}
+
+.resultado {
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+}
+
+.red{
+    background: var(--red-color);
+}
+
+.green {
+    background: var(--green-color);
+}
+
